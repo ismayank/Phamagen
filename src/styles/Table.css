@@ -1,0 +1,225 @@
+/* Override default h2 styles and apply your custom styles */
+.Head {
+    font-size: 22px !important; /* Larger font size */
+    font-weight: bold !important; /* Make it bold */
+    color: #333; /* Dark text color */
+    margin: 0; /* Remove default margin */
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  
+  /* Style for the sub-heading */
+  .sub-heading {
+    font-size: 14px; /* Smaller font size */
+    font-weight: lighter; /* Lighter font weight */
+    color: #777; /* Lighter color */
+    margin-top: 5px; /* Remove default margin */
+    padding-left: 20px;
+    margin-bottom: 20px; /* Space below the sub-heading */
+  }
+  
+  
+.search-results {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Add a grey line above the header */
+  .search-results-header {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #dcdcdc; /* Grey line above header */
+  }
+  
+  .search-results-header h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .search-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between search box and sort button */
+  }
+  
+  .search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 200px;
+  }
+  
+  .search-box button {
+    position: absolute;
+    right: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .sort-button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-icon {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Adjust size of the icon */
+  }
+  
+  .sort-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Tabs Section */
+  .search-results-tabs {
+    display: flex;
+    border: 1px solid #dcdcdc; /* Thin border */
+    border-radius: 6px;
+    overflow: hidden; /* Ensures rounded corners are visible */
+    width: fit-content; /* Adjusts to content size */
+    background-color: #f9f9f9; /* Light grey background */
+  }
+  
+  .tab {
+    padding: 8px 16px; /* Slightly smaller padding */
+    background-color: #f9f9f9; /* Matches the container */
+    color: #333; /* Standard text color */
+    font-weight: 500;
+    flex: 1; /* Ensures equal spacing */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    border: none; /* Removes extra tab borders */
+  }
+  
+  .tab:not(:last-child) {
+    border-right: 1px solid #dcdcdc; /* Thin divider line */
+  }
+  
+  .tab.active {
+    background-color: #e0e0e0; /* Light grey active background */
+    color: #333; /* Maintains consistent text color */
+    font-weight: bold; /* Emphasized text for active tab */
+  }
+  
+  .tab:hover {
+    background-color: #f1f1f1; /* Slight hover effect */
+  }
+  
+  /* Table Section */
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .results-table th,
+  .results-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .results-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .label.labelled {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .label.unlabelled {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .score.high {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .score.low {
+    color: red;
+    font-weight: bold;
+  }
+  
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: space-between; /* Distribute items between left and right */
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    padding: 20px;
+  }
+  
+  /* Page range text on the left */
+  .page-range {
+    font-weight: medium;
+    color: #333;
+  }
+  
+  /* Container for previous and next buttons */
+  .prev-next-buttons {
+    display: flex;
+    gap: 5px; /* Minimal gap between buttons */
+  }
+  
+  /* Style for Previous and Next buttons */
+  .prev-next-btn {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  /* Hover effect for Previous and Next buttons */
+  .prev-next-btn:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  /* Active (clicked) state for Previous and Next buttons */
+  .prev-next-btn:active {
+    background-color: #e0e0e0; /* Grey background when clicked */
+    color: #333; /* Darker text when clicked */
+    border-color: #ddd; /* Lighter border when clicked */
+  }
+  
+  
+  

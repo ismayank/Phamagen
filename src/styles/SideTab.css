@@ -1,0 +1,78 @@
+/* General Side Tab Container */
+.side-tab {
+    width: 80px;
+    height: 100vh;
+    background-color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(125, 121, 121, 0.1);
+    position: fixed;
+  }
+  
+  /* Logo Section */
+  .side-tab-logo {
+    padding: 10px 0;
+  }
+  
+  .logo-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Menu Section */
+  .side-tab-menu {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .menu-item:hover {
+    color: #007bff;
+  }
+  
+  .menu-icon {
+    font-size: 32px;
+  }
+  
+  .menu-item span {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+/* SideTab CSS */
+.side-tab-logo-image {
+    width: 80px; /* Logo size */
+    height: auto; /* Keep aspect ratio */
+    margin-bottom: 0; /* Add spacing below the logo */
+  }
+  
+  .menu-icon {
+    width: 30px; /* Larger size for icons */
+    height: auto;
+    margin: 1px 0; /* Add margin for spacing between icons */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  .menu-item:hover .menu-icon {
+    opacity: 0.8; /* Slight opacity on hover */
+  }
+  

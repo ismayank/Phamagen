@@ -1,0 +1,169 @@
+/* Stats Container */
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f2fbfb;
+}
+
+/* Stat Box - Square Shape */
+.stat-box {
+  width: 320px; /* Set fixed width */
+  height: 200px; /* Set height equal to width for a square box */
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Adjust padding to make room for content */
+  text-align: left; /* Align content to the left */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+}
+
+/* Title in Stat Box */
+.stat-box h3 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Main content in Stat Box */
+.stat-box p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; /* Space between number and smaller text */
+}
+
+/* Small text under main content */
+.stat-box small {
+  font-size: 12px;
+  color: #777;
+}
+/* Styling for the date in small text */
+.date-highlight {
+  color: #298a91; /* Choose your preferred color */
+  font-weight: bold;
+}
+
+/* Styling for the date range */
+.date-range {
+  font-size: 15px;
+  color: #298a91; /* Green color for the date range */
+  font-weight: bold;
+}
+/* Styling for the search icon */
+.search-icon {
+  font-size: 24px;
+  color: #298a91; /* Icon color */
+  margin-bottom: 10px; /* Space below the search icon */
+  background-color: #f2fbfb; /* Icon background color */
+  border-radius: 20%; /* Rounded corners */
+  padding: 10px; /* Space around the icon */
+  display: inline-block;
+}
+
+/* Styling for the calendar icon */
+.calendar-icon {
+  font-size: 24px;
+  color: #298a91; /* Icon color */
+  margin-bottom: 10px; /* Space below the calendar icon */
+  background-color: #f2fbfb; /* Icon background color */
+  border-radius: 20%; /* Rounded corners */
+  padding: 10px; /* Space around the icon */
+  display: inline-block;
+}
+
+/* Styling for the date in small text */
+.date-highlight {
+  color: #298a91;
+  font-weight: bold;
+}
+
+/* Styling for the date range */
+.date-range {
+  color: #298a91;
+  font-weight: bold;
+}
+
+
+/* Styling for the pie chart container */
+.fetched-data-container {
+  display: flex;
+  align-items: center; /* Align icon and text horizontally */
+  gap: 20px; /* Space between pie chart and text */
+  margin-top: 10px; /* Space above the pie chart */
+}
+
+/* Pie chart icon style */
+.pie-chart-icon {
+  width: 10px; /* Larger size for the pie chart */
+  height: 100px;
+  background-color: white; /* Rounded background for the icon */
+  border-radius: 50%; /* Round background */
+  padding: 20px; /* Space inside the circle */
+  color: #298a91; /* Icon color */
+}
+
+/* Styling for the fetched data numbers */
+.fetched-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.fetched-number {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 0; /* Remove margin between numbers */
+}
+
+.fetched-number:nth-child(2) {
+  color: #8c94a0; /* Different color for the second number */
+}
+
+.stat-box p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.queue-container {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  gap: 20px; /* Space between "In Queue" and "Non-English" */
+}
+
+.queue-item {
+  text-align: left; /* Align text in the center */
+}
+
+.queue-number, .non-english-number {
+  color: #298a91; /* Blue color for numbers */
+  font-weight: bold;
+}
+
+.reviewed {
+  padding: 8px;
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  flex-direction: column; /* Stack the numbers and text vertically */
+  align-items: flex-start; /* Align to the left */
+  gap: 0px;
+}
+
+.reviewed-number {
+  color: #298a91; /* Blue color for numbers */
+  font-weight: bold;
+}
