@@ -49,7 +49,7 @@ const Table = () => {
             <td className="score high">95%</td>
             <td>Reviewed</td>
             <td>
-              <a href="#">Add Details</a>
+              <a href="/details">Add Details</a>
             </td>
           </tr>
           <tr>
@@ -61,7 +61,9 @@ const Table = () => {
             <td className="score low">25%</td>
             <td>Unreviewed</td>
             <td>
-              <a href="#">Add Details</a>
+              <td>
+                <a href="/details">Add Details</a>
+              </td>
             </td>
           </tr>
           {/* Additional Entries */}
@@ -74,7 +76,9 @@ const Table = () => {
             <td className="score high">87%</td>
             <td>Reviewed</td>
             <td>
-              <a href="#">Add Details</a>
+              <td>
+                <a href="/details">Add Details</a>
+              </td>
             </td>
           </tr>
           <tr>
@@ -86,7 +90,9 @@ const Table = () => {
             <td className="score high">92%</td>
             <td>Reviewed</td>
             <td>
-              <a href="#">Add Details</a>
+              <td>
+                <a href="/details">Add Details</a>
+              </td>
             </td>
           </tr>
           <tr>
@@ -98,7 +104,9 @@ const Table = () => {
             <td className="score high">89%</td>
             <td>Reviewed</td>
             <td>
-              <a href="#">Add Details</a>
+              <td>
+                <a href="/details">Add Details</a>
+              </td>
             </td>
           </tr>
         </tbody>

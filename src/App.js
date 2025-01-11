@@ -1,6 +1,4 @@
 import React from "react";
-
-import Filters from "./components/Filters";
 import Table from "./components/Table";
 import SideTab from "./components/SideTab";
 import Stats from "./components/Stats"; // Import the new component
